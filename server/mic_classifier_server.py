@@ -52,7 +52,11 @@ def add_to_array(data):
     #print(len(data))
     while start_byte < len(data):
         val = data[start_byte:(start_byte+4)].hex()
-        speech_arr.append(int(val, 16)) #convert to decimal string
+        temp = int(val, 16)
+        if temp > 0x7FFFFFFF:
+            temp -= 0x100000000
+        temp = temp / (2**21)
+        speech_arr.append(temp) #convert to decimal string
         start_byte += 4
 
 input_layer = [tf.feature_column.numeric_column("x", shape=[NUM_FILTERS*NUM_CHUNKS])]
