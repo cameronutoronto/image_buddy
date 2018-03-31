@@ -1,0 +1,18 @@
+  _____                              ____            _     _       
+ |_   _|                            |  _ \          | |   | |      
+   | |  _ __ ___   __ _  __ _  ___  | |_) |_   _  __| | __| |_   _ 
+   | | | '_ ` _ \ / _` |/ _` |/ _ \ |  _ <| | | |/ _` |/ _` | | | |
+  _| |_| | | | | | (_| | (_| |  __/ | |_) | |_| | (_| | (_| | |_| |
+ |_____|_| |_| |_|\__,_|\__, |\___| |____/ \__,_|\__,_|\__,_|\__, |
+                         __/ |                                __/ |
+                        |___/                                |___/ 
+                        
+To recreate the Vivado project:
+
+1. Open Vivado and open the Tcl Console.
+2. Navigate to the "vivado" subdirectory of main directory "image_buddy".
+3. Run "source build.tcl" to generate the project.
+4. Click "Generate Block Design".
+5. Click "Generate Bitstream".
+6. Export the hardware (include bitstream) and launch the SDK.
+7. Under "File -> Import...", select "General -> Projects from Folder or Archive". Select the "vivado/sdk" directory and import "screen_proj" and "screen_proj_bsp".
