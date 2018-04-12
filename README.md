@@ -24,3 +24,7 @@ To recreate the Vivado project:
 
 Refer to `doc/Report.pdf` for details on how to set up the project.
 
+## Video
+
+[![video](http://img.youtube.com/vi/D8lgZxcIRG0/0.jpg)](http://www.youtube.com/watch?v=D8lgZxcIRG0)
+
